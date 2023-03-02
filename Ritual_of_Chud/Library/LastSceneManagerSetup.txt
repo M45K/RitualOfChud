@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/Scena3-Configurazione_Ragno.unity
+  isLoaded: 1
+  isActive: 1

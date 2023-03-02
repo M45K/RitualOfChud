@@ -1,0 +1,58 @@
+FileDialogWindow class
+
+Advanced File Browser - easy to use system which can help you to make file browser [like Windows or Mac OS] with a lot of functions.
+Select file, move file/directory, remove file, rename file/directory, bookmarks, copy-paste and cut file/directory and many other functions
+
+How to set up AdvancedFileBrowser
+1) Alcatraz Systems/File Browser System/Prefabs/UI.prefab - put to your scene. [doesn't contains Camera]
+2) In the UI prefab find out Controller and Example Script
+3) Open and Edit Example Script [Inside Demo Manager.as described main functions, how to receive selected path from FileBrowser]
+
+How to set up FileBrowser controller [v1.0] previous version 
+http://youtube.com/watch?list=PLbNQMwWnlvYoMXsM6E4aQ0nqrWNjhbZNJ&v=ZyVpb18_AZw
+
+API below.
+
+Base Functions:
+		OpenFileBrowser() - Activate and set up FileBrowser. Bring it to front
+
+Static Functions:
+		Static:
+		AdvancedFileBrowser.AlreadyExists(); - Cast error [path already added] 
+		AdvancedFileBrowser.Done(); - Cast error [Operation ended successful]
+		AdvancedFileBrowser.FileNotFound(); - Cast error [File wasn't found]
+		AdvancedFileBrowser.DirectoryNotFound(); - Cast error [Directory wasn't found]
+		
+		
+		Public:
+		CleanBookmarks() - Clean all bookmarks
+		RemoveBookmark(string path) - Remove bookmark by path
+		Search() - start search operation. Search mask - text in "search input field"
+		Refresh() - Refresh page
+		Back() - Return back (Open previous page)
+		LoadDirectory(string path, bool saveToHistory) - Open folder. [as IENumerator]
+		ButtonEvent() - Main function! Will be called on "Select" button click
+
+Properties:
+		SelectedFile   [as FileItem]    - return current selected file
+		SelectedFolder [as FolderItem] - return selected folder with info about it
+
+
+How to catch "Select" button event:
+		1) Find variable  "Recipient" in a controller with AdvancedFileBrowser.cs.
+		2) Set up object with your controller which will use received paths [DemoManager.cs in our case]
+		3) Add function "public void AddPath(string arg)" where agr - received path from the main controller
+		For more info look at "DemoManager.cs"
+
+
+		Control:
+			F5 - Update page
+			Del or RMB->Delete - Delete file or folder
+			RMB->Create folder - Create folder
+			Return[Enter] - Load page
+
+
+
+AdvancedFileBrowser [v1.1] by Alcatraz. 
+Flight Dream Studio (C) 2015. 
+alcatrazalex@gmail.com

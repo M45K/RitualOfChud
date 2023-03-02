@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Scena1-New-Carica.unity
+    guid: 9747581f3a8b13a44955f450f66740b2
+  - enabled: 1
+    path: Assets/Scenes/Scena2-Dati-Utente.unity
+    guid: c23ebd80ed3fea64aa453ee50c3615f8
+  - enabled: 1
+    path: Assets/Scenes/Scena3-Configurazione_Ragno.unity
+    guid: 8c0a4ef513fd1024dbbe846d2e4783d0
+  - enabled: 1
+    path: Assets/Scenes/Scena4-Caricamento-Ricerca-DB.unity
+    guid: cd920adb4ba84f94ab9eff5ac03f971c
+  - enabled: 1
+    path: Assets/Scenes/Scena0-Protocolli-Editor-Admin.unity
+    guid: 9ccc3d57695f3974b9627a50fdf7bd2d
+  - enabled: 1
+    path: Assets/Scenes/Scena5.unity
+    guid: 2bde960128beda7489c27ef1f6e83478
+  - enabled: 0
+    path: Assets/Demo.unity
+    guid: 4735f05df8f576c46afc1c2a4f657466
+  - enabled: 0
+    path: Assets/Underlay.unity
+    guid: cf37bba53013fc142af51beb95af7bc3
+  - enabled: 1
+    path: Assets/Scenes/underlayRender.unity
+    guid: fbb4aea6973f8a84aaf969d91e7a3f6f
+  - enabled: 1
+    path: Assets/Scenes/underlaySelector.unity
+    guid: efbce715cd4c7874f9f8aba965dbfaa0
+  m_configObjects: {}
